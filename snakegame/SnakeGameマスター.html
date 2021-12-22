@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="ja" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <title>Snake Game</title>
+  </head>
+  <body>
+    <div id="main">
+    <p>SNAKE GAME</p>
+    <button type="button"  class="nes-btn is-error" onclick="hard()">HARD MODE</button>
+    <button type="button"  class="nes-btn is-primary" onclick="easy()">EASY MODE</button><br>
+    <button type="button"  class="nes-btn is-success" onclick="rank()">RANKING</button><br>
+    <button type="button" class="nes-btn" onclick="reload()">RETRY</button><br>
+    <h1>Start with Direction key</h1><br>
+    <canvas id="canvas" width="400" height="400"></canvas>
+    </div>
+
+    </div>
+
+      <div id="ranking"　class="nes">
+        <button type="button" class="nes-btn" onclick="toMain()">BACK GAME</button>
+        <div class="title">
+          <h2>RANKING</h2>
+        </div>
+        <table id="rankingTable" border="2" align="center">
+          <tr id ="first" >
+            <td class="rank">1th</td>
+            <td class="name" id= "name_1">no data</td>
+            <td id= "score_1">-</td>
+          </tr>
+          <tr>
+            <td class="rank">2nd</td>
+            <td class="name" id = "name_2">no data</td>
+            <td id = "name_2">-</td>
+          </tr>
+          <tr>
+            <td class="rank">3rd</td>
+            <td class="name" id = "name_3">no data</td>
+            <td id = "name_3">-</td>
+          </tr>
+          <tr>
+            <td class="rank">4th</td>
+            <td class="name" id = "name_4">no data</td>
+            <td id = "name_4">-</td>
+          </tr>
+          <tr>
+            <td class="rank">5th</td>
+            <td class="name" id = "name_5">no data</td>
+            <td id = "name_5">-</td>
+          </tr>
+        </table>
+      </center>
+    </div>
+    </div>
+
+    <script src="js/ncmb.min.js"></script>
+    <script src="js/keyPush.js"></script>
+    <script src="js/init.js"></script>
+    <script src="js/main.js"></script>
+    <script src="js/rank.js"></script>
+
+    </script>
+    <link href="https://unpkg.com/nes.css@latest/css/nes.min.css" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css?family=Press+Start+2P" rel="stylesheet">
+    <link href="https://fonts.googleapis.com/css2?family=DotGothic16&display=swap" rel="stylesheet">
+  　<link rel="stylesheet" href="css/snakeGame.css">
+  </body>
+</html>
